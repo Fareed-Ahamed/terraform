@@ -1,13 +1,8 @@
-variable "aws_region" {
-  default = "us-east-1"
-}
-
-variable "vpc_cidr" {}
-variable "public_subnet_cidrs" { type = list(string) }
-variable "private_subnet_cidrs" { type = list(string) }
-variable "availability_zones" { type = list(string) }
-
+variable "aws_region" {}
+variable "instance_name" {}
 variable "instance_type" {}
+variable "instance_count" {}
 variable "db_username" {}
 variable "db_password" {}
 variable "db_name" {}
+variable "s3_bucket_name" {}
